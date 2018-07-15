@@ -24,7 +24,7 @@ def main():
     options = webdriver.ChromeOptions()
     options.add_argument('--start-maximized')
     prefs = {'profile.default_content_settings.popups': 0,
-             'download.default_directory': r'%s' %hw_name, # IMPORTANT - ENDING SLASH V IMPORTANT
+             'download.default_directory': r'%s' %hw_name, #Must end with slash e.g. 'hw1/' 
              'directory_upgrade': True}
     options.add_experimental_option("prefs", prefs)
     browser = webdriver.Chrome(chrome_options=options)
