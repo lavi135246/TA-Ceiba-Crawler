@@ -44,7 +44,7 @@ def main():
     pw.send_keys(password)
 
     browser.find_element_by_name("op").submit()
-    browser.find_element_by_xpath("//input[@name='b1']")
+    browser.find_element_by_xpath("//input[@name='b1']").click()
     browser.find_element_by_xpath("//input[@onclick=\"singleadm('hw')\"]").click()
     browser.find_element_by_link_text("批改作業").click()
 
