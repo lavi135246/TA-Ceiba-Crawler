@@ -8,9 +8,12 @@ NTU ceiba homework crawler
 - PyVirtualDisplay
 
 
-```
+```bash
 $ pip install selenium PyVirtualDisplay parsing 
 $ sudo apt-get install xvfb
+```
+#### Chrome driver
+```bash
 # you may also search for the driver version for your chrome version here
 # http://chromedriver.storage.googleapis.com/index.
 # I was using 77.0.3865.10
