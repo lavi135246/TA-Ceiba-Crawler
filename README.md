@@ -3,13 +3,29 @@ NTU ceiba homework crawler
 
 ## Requirements
 - python 3
+- Google Chrome (I was using: 77.0.3865.120-1)
 - selenium
-- pyvirtualdisplay
+- PyVirtualDisplay
+
+
+```
+$ pip install selenium PyVirtualDisplay parsing 
+$ sudo apt-get install xvfb
+# you may also search for the driver version for your chrome version here
+# http://chromedriver.storage.googleapis.com/index.
+# I was using 77.0.3865.10
+$ wget -N http://chromedriver.storage.googleapis.com/<version>/chromedriver_linux64.zip
+$ unzip chromedriver_linux64.zip
+$ chmod +x chromedriver
+$ sudo mv -f chromedriver /usr/local/share/chromedriver
+$ sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+$ sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+```
 
 ## How it works
 ```bash
 $ python HWcrawler.py
-# 1. 作業下載路徑 Must end with slash e.g. 'hw1/'
+# 1. 作業下載路徑
 # 2. 請輸入 ceiba 帳號 (TA)
 # 3. 請輸入 ceiba 密碼
 # 4. 請輸入作業編號 
